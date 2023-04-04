@@ -1,69 +1,17 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-
-
-
-
 * {
-    margin: 0;
-    padding: 0;
+
     font-family: sans-serif;
 }
-.tepe{
+
+.tepe {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    
+
     list-style: none;
     background-color: #082442;
 }
+
 .tepe a {
     text-decoration: none;
     display: block;
@@ -72,13 +20,15 @@ table {
     font-size: 12px;
     transition: 0.8s;
 }
-.tepe a:hover{
+
+.tepe a:hover {
     background-color: darkgoldenrod;
     color: white;
 }
-.lang{
-background-image: url(images/en.jpg); 
-background-position-x: center;
+
+.lang {
+    background-image: url(https://www.erciyes.edu.tr/images/Slider/c7151c84-a3b7-4f01-9381-8560a9d2367e.jpg);
+    background-position-x: center;
     background-position-y: center;
     background-size: initial;
     background-repeat-x: no-repeat;
@@ -88,163 +38,123 @@ background-position-x: center;
     background-clip: initial;
     background-color: initial;
 
-width: 15px;
-height: 45px;
-display: block;
-}
-.logo{
-background-image: url(images/logo.png) no-repeat center center;   
-    width: 442px;
-    background-size: 442px;
-    height: 156px;
-    margin: -23px 0 0 30px;
+    width: 15px;
+    height: 45px;
     display: block;
-    position: absolute;
 }
-.myheader{  
 
+.logo {
+    background-image: url(https://www.erciyes.edu.tr/images/logo.png) no-repeat center center;
+    width: 442px;
+
+
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
 }
-.navbar{
+
+.navbar {
+    height: 110px;
+    width: 100%;;
     display: flex;
-    width: 100%;
-    margin: auto;
-    /* padding: 32px 0;  */
     align-items: center;
     justify-content: end;
-    flex-wrap: wrap;  
     z-index: 99;
     position: relative;
-    float: right;
 }
-.navbar ul li{
-    list-style-type: none;
-    display: inline-block;
-    margin:5px 10px 0px 10px;
+
+.navbar__liste {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navbar ul li {
+    margin: 5px 10px 0px 10px;
     padding: 15px;
-    text-align: center;
-    height: 105px;
-    line-height: 85px;
     font-weight: 700;
     font-size: 17px;
     color: #082442;
-    text-decoration: none;
     transition: 0.8s;
 }
-.navbar li:hover{
+
+.navbar li:hover {
     color: red;
 }
-.fa{
-  font-size: 25px;  
-  color: dimgray;
-  margin-right: 10px; 
+
+.fa {
+    font-size: 25px;
+    color: dimgray;
+    margin-right: 10px;
 }
-.fa-solid{
-    margin-left: 10px;   
+
+.fa-solid {
+    margin-left: 10px;
 }
-.stun{
+
+.stun {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #f2f2f2;
     padding: 0 !important;
     margin: 0 !important;
-    
+
 }
-.item1{
+
+.stun > div {
     padding: 40px;
+    color: #fff;
+    flex-grow: 1;
+    padding-top: 45px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #dee2e6 !important;
+
+}
+
+.item1 {
+
     background-image: url(images/item1.jpg);
-    color: #fff;
-    border: 1px solid #dee2e6 !important;
-    flex-grow: 1;
 
-    text-align: center;
-    padding-top: 45px;
-    font-size: 20px;
 
 }
-.item2{
-    padding: 40px; 
+
+.item2 {
     background-image: url(images/item2.jpg);
-    color: #fff;
-    border: 1px solid #dee2e6 !important;
-    flex-grow: 1;
-
-    text-align: center;
-    padding-top: 45px;
-    font-size: 20px;
-   
 }
-.item3{
-    padding: 40px; 
+
+.item3 {
     background-image: url(images/item3.jpg);
-    color: #fff;
-    border: 1px solid #dee2e6 !important;
-    flex-grow: 1;
-
-    text-align: center;
-    padding-top: 45px;
-    font-size: 20px;
-    
 }
-.item4{
-    padding: 40px;
+
+.item4 {
     background-image: url(images/item4.jpg);
-    color: #fff;
-    border: 1px solid #dee2e6 !important;
-    flex-grow: 1;
-
-    text-align: center;
-    padding-top: 45px;
-    font-size: 20px;
-   
 }
-.item5{
-    padding: 40px;
+
+.item5 {
     background-image: url(images/item5.jpg);
-    color: #fff;
-    border: 1px solid #dee2e6 !important;
-    flex-grow: 1;
-
-    text-align: center;
-    padding-top: 45px;
-    font-size: 20px;
-   
 }
-.item6{
-    padding: 40px;  
+
+.item6 {
     background-image: url(images/item6.jpg);
-    color: #fff;
-    border: 1px solid #dee2e6 !important;
-    flex-grow: 1;
+}
 
-    text-align: center;
-    padding-top: 45px;
-    font-size: 20px;
-    
-}
-.grey-bg{
+.grey-bg {
     min-height: 1000px;
-    background: rgba(222,225,231,1);
+    background: rgba(222, 225, 231, 1);
 }
-.container{
+
+.container {
     visibility: visible;
     animation-duration: 1s;
     animation-delay: 0.5s;
     animation-name: fadeInLeft;
-
     min-width: 1500px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
-
-
-
-
-
-
-
-
-
